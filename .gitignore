@@ -1,0 +1,6 @@
+not_uploaded/
+not_uploaded/**
+__pycache__/
+*.pyc
+*.csv
+*.png
