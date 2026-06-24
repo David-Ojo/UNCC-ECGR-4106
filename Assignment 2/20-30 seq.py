@@ -8,11 +8,7 @@ import torchvision.transforms as transforms
 import matplotlib.pyplot as plt
 import time
 import pandas as pd
-
 from torch.utils.data import DataLoader, TensorDataset
-import os
-
-os.makedirs("plots", exist_ok=True)
 
 training_start = time.time()
 epoch_start = time.time()
@@ -45,41 +41,30 @@ chars = sorted(list(set(text)))
 
 # Defining the RNN model
 class CharRNN(nn.Module):
-    def __init__(self, model_type, vocab_size, hidden_size, num_layers=1, fc_size=128):
+    def __init__(self, model_type, vocab_size, hidden_size, num_layers=1):
         super().__init__()
 
         self.embedding = nn.Embedding(vocab_size, hidden_size)
 
         self.model_type = model_type
-        #fully connected layer
-        if model_type == "gru":
-            self.rnn = nn.GRU(
-                hidden_size,
-                hidden_size,
-                num_layers=num_layers,
-                batch_first=True
-            )
-        elif model_type == "lstm":
-            self.rnn = nn.LSTM(
-                hidden_size,
-                hidden_size,
-                num_layers=num_layers,
-                batch_first=True
-            )
 
-        self.fc = nn.Sequential(
-            nn.Linear(hidden_size, fc_size),
-            nn.ReLU(),
-            nn.Linear(fc_size, vocab_size)
-        )
+        if model_type == "gru":
+            self.rnn = nn.GRU(hidden_size, hidden_size, num_layers=num_layers, batch_first=True)
+        elif model_type == "lstm":
+            self.rnn = nn.LSTM(hidden_size, hidden_size, num_layers=num_layers, batch_first=True)
+
+        self.fc = nn.Linear(hidden_size, vocab_size)
 
     def forward(self, x):
         x = self.embedding(x)
-        out, _ = self.rnn(x)
-        out = out[:, -1, :]
-        out = self.fc(out)
+
+        if self.model_type == "lstm":
+            out, _ = self.rnn(x)
+        else:
+            out, _ = self.rnn(x)
+
+        out = self.fc(out[:, -1, :])
         return out
-        
 
 def count_parameters(model):
     return sum(
@@ -103,7 +88,7 @@ def model_size_mb(model):
     return (param_size + buffer_size) / 1024**2
 
 
-def estimate_rnn_complexity(model_type, seq_len, vocab_size, hidden_size, num_layers, fc_size):
+def estimate_rnn_complexity(model_type, seq_len, vocab_size, hidden_size, num_layers):
     fc_ops = hidden_size * vocab_size
 
     if model_type == "gru":
@@ -125,7 +110,7 @@ def estimate_rnn_complexity(model_type, seq_len, vocab_size, hidden_size, num_la
 
 epoch_times = []
 # Training the model
-def train_model(model_type, seq_len, hidden_size=128, num_layers=1,fc_size=128, epochs=100):
+def train_model(model_type, seq_len, hidden_size=128, num_layers=1, epochs=100):
     best_val_loss = float("inf")
     patience = 10
     patience_counter = 0
@@ -176,8 +161,7 @@ def train_model(model_type, seq_len, hidden_size=128, num_layers=1,fc_size=128, 
     model_type,
     len(chars),
     hidden_size,
-    num_layers,
-    fc_size
+    num_layers
 ).to(device)
     
     criterion = nn.CrossEntropyLoss()
@@ -274,39 +258,21 @@ def train_model(model_type, seq_len, hidden_size=128, num_layers=1,fc_size=128, 
     "params": count_parameters(model),
     "model_size_mb": model_size_mb(model),
     "estimated_ops": estimate_rnn_complexity(
-        model_type,
-        seq_len,
-        len(chars),
-        hidden_size,
-        num_layers,
-        fc_size
-    ),
-      "fc_size": fc_size
+    model_type,
+    seq_len,
+    len(chars),
+    hidden_size,
+    num_layers
+)
 }
-
-experiments = [
-    {"hidden_size": 64, "num_layers": 1, "fc_size": 64},
-    {"hidden_size": 128, "num_layers": 1, "fc_size": 128},
-    {"hidden_size": 256, "num_layers": 1, "fc_size": 128},
-    {"hidden_size": 128, "num_layers": 2, "fc_size": 128},
-    {"hidden_size": 128, "num_layers": 1, "fc_size": 256},
-]
 
 results = []
 
 for model_type in ["gru", "lstm"]:
-    for exp in experiments:
-        results.append(
-            train_model(
-                model_type=model_type,
-                seq_len=30,
-                hidden_size=exp["hidden_size"],
-                num_layers=exp["num_layers"],
-                fc_size=exp["fc_size"],
-                epochs=100,
-            )
-        )
-summary = []
+    for seq_len in [20, 30]:
+        results.append(train_model(model_type, seq_len, hidden_size=128, num_layers=1, epochs=100))
+
+        summary = []
 
 for r in results:
     summary.append({
@@ -320,8 +286,7 @@ for r in results:
         "time_sec": r["time"],
         "trainable_params": r["params"],
         "model_size_MB": r["model_size_mb"],
-        "estimated_ops": r["estimated_ops"],
-        "fc_size": r["fc_size"]
+        "estimated_ops": r["estimated_ops"]
     })
 
 df = pd.DataFrame(summary)
@@ -329,8 +294,25 @@ df.to_csv("rnn_experiment_results.csv", index=False)
 
 print(df)
 
+import matplotlib.pyplot as plt
+
+def plot_result(result):
+    plt.figure()
+    plt.plot(result["train_loss"], label="train_loss")
+    plt.plot(result["val_loss"], label="val_loss")
+    plt.title(f"{result['model']} seq={result['seq_len']}")
+    plt.legend()
+    plt.show()
+
+    plt.figure()
+    plt.plot(result["val_acc"], label="val_accuracy")
+    plt.title(f"{result['model']} seq={result['seq_len']} accuracy")
+    plt.legend()
+    plt.show()
 
 
+for r in results:
+    plot_result(r)
 
 total_training_time = time.time() - training_start
 
@@ -373,36 +355,5 @@ print(test_str[-best_seq_len:])
 print(f"Predicted next character: '{predicted_char}'")
 
 
-def plot_result(result):
-    name = (
-        f"{result['model']}_"
-        f"seq{result['seq_len']}_"
-        f"h{result['hidden_size']}_"
-        f"layers{result['layers']}_"
-        f"fc{result['fc_size']}"
-    )
 
-    plt.figure()
-    plt.plot(result["train_loss"], label="train_loss")
-    plt.plot(result["val_loss"], label="val_loss")
-    plt.title(name + " loss")
-    plt.xlabel("Epoch")
-    plt.ylabel("Loss")
-    plt.legend()
-    plt.savefig(f"plots/{name}_loss.png", dpi=300, bbox_inches="tight")
-    plt.close()
-
-    plt.figure()
-    plt.plot(result["val_acc"], label="val_accuracy")
-    plt.title(name + " accuracy")
-    plt.xlabel("Epoch")
-    plt.ylabel("Validation accuracy")
-    plt.legend()
-    plt.savefig(f"plots/{name}_accuracy.png", dpi=300, bbox_inches="tight")
-    plt.close()
-
-for r in results:
-    plot_result(r)
-
-    df.to_csv("rnn_experiment_results.csv", index=False)
 
