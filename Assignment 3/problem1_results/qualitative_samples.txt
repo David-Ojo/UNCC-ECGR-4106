@@ -1,0 +1,35 @@
+Sample 1
+French: we celebrated their wedding
+Target English: nous avons célébré leur mariage
+Predicted English: we visited the ancient castle
+Exact Match: False
+BLEU-4: 0.0537
+--------------------------------------------------
+Sample 2
+French: we walk through the historic streets of paris
+Target English: nous marchons dans les rues historiques de paris
+Predicted English: we walk through the park during our
+Exact Match: False
+BLEU-4: 0.3564
+--------------------------------------------------
+Sample 3
+French: i am currently reading a classic russian novel
+Target English: je lis actuellement un roman classique russe
+Predicted English: i am reading an interesting autobiography right
+Exact Match: False
+BLEU-4: 0.0670
+--------------------------------------------------
+Sample 4
+French: she works from home on thursdays
+Target English: elle travaille à domicile le jeudi
+Predicted English: she works in a laboratory
+Exact Match: False
+BLEU-4: 0.0930
+--------------------------------------------------
+Sample 5
+French: he teaches world geography to high school classes
+Target English: il enseigne la géographie mondiale à des classes de lycée
+Predicted English: he teaches molecular chemistry to advanced students
+Exact Match: False
+BLEU-4: 0.0670
+--------------------------------------------------
