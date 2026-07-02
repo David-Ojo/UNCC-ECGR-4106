@@ -1,0 +1,35 @@
+Sample 1
+English: we celebrated their wedding
+Target French: nous avons célébré leur mariage
+Predicted French: nous avons célébré notre anniversaire
+Exact Match: False
+BLEU-4: 0.2659
+--------------------------------------------------
+Sample 2
+English: we walk through the historic streets of paris
+Target French: nous marchons dans les rues historiques de paris
+Predicted French: nous marchons dans le parc central chaque après midi
+Exact Match: False
+BLEU-4: 0.1187
+--------------------------------------------------
+Sample 3
+English: i am currently reading a classic russian novel
+Target French: je lis actuellement un roman classique russe
+Predicted French: je lis actuellement une biographie historique fascinante
+Exact Match: False
+BLEU-4: 0.1635
+--------------------------------------------------
+Sample 4
+English: she works from home on thursdays
+Target French: elle travaille à domicile le jeudi
+Predicted French: elle travaille à temps temps à l hôpital
+Exact Match: False
+BLEU-4: 0.1375
+--------------------------------------------------
+Sample 5
+English: he teaches world geography to high school classes
+Target French: il enseigne la géographie mondiale à des classes de lycée
+Predicted French: il enseigne la chimie aux à des enfants du collège
+Exact Match: False
+BLEU-4: 0.1313
+--------------------------------------------------

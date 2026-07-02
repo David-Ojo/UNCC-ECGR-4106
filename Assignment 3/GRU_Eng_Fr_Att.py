@@ -679,7 +679,7 @@ for train_seed in TRAIN_SEEDS:
 best_run = max(sweep_results, key=lambda x: x["bleu"])
 best_seed = best_run["train_seed"]
 
-output_dir = "problem2_attention_results"
+output_dir = "problem_3_attention_results"
 os.makedirs(output_dir, exist_ok=True)
 
 plt.figure(figsize=(8,5))

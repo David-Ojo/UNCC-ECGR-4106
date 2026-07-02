@@ -74,7 +74,7 @@ print("Total sentence pairs:", len(pairs))
 train_pairs, val_pairs = train_test_split(
     pairs,
     test_size=0.2,
-    random_state=SEED,
+    random_state=SPLIT_SEED,
     shuffle=True
 )
 
@@ -324,7 +324,7 @@ print(f"Total Training Time: {total_training_time:.2f} seconds")
 
 # Training Results
 
-output_dir = "problem1_results"
+output_dir = "problem3-Non_Attention_results"
 os.makedirs(output_dir, exist_ok=True)
 
 plt.figure(figsize=(8,5))
@@ -429,7 +429,7 @@ exact_acc, avg_bleu, validation_results = compute_exact_match_and_bleu(
     val_pairs
 )
 
-TRAIN_SEEDS = list(range(0, 201))
+TRAIN_SEEDS = list(range(170 , 171))
 
 sweep_results = []
 

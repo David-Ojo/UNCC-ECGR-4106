@@ -1,35 +1,35 @@
 Sample 1
-French: nous avons célébré leur mariage
-Target English: we celebrated their wedding
-Predicted English: we celebrated our anniversary
+English: we celebrated their wedding
+Target French: nous avons célébré leur mariage
+Predicted French: nous avons célébré célébré remise
 Exact Match: False
-BLEU-4: 0.1699
+BLEU-4: 0.2659
 --------------------------------------------------
 Sample 2
-French: nous marchons dans les rues historiques de paris
-Target English: we walk through the historic streets of paris
-Predicted English: we walk through the park park
+English: we walk through the historic streets of paris
+Target French: nous marchons dans les rues historiques de paris
+Predicted French: nous avons traversé le col de haute du pied
 Exact Match: False
-BLEU-4: 0.3641
+BLEU-4: 0.0285
 --------------------------------------------------
 Sample 3
-French: je lis actuellement un roman classique russe
-Target English: i am currently reading a classic russian novel
-Predicted English: i am reading an a modern novel
+English: i am currently reading a classic russian novel
+Target French: je lis actuellement un roman classique russe
+Predicted French: je lis un roman intéressant ce
 Exact Match: False
-BLEU-4: 0.0761
+BLEU-4: 0.1034
 --------------------------------------------------
 Sample 4
-French: elle travaille à domicile le jeudi
-Target English: she works from home on thursdays
-Predicted English: she works time time
+English: she works from home on thursdays
+Target French: elle travaille à domicile le jeudi
+Predicted French: elle travaille des contrats juridiques des entreprises
 Exact Match: False
-BLEU-4: 0.1031
+BLEU-4: 0.0699
 --------------------------------------------------
 Sample 5
-French: il enseigne la géographie mondiale à des classes de lycée
-Target English: he teaches world geography to high school classes
-Predicted English: he teaches molecular chemistry to advanced
+English: he teaches world geography to high school classes
+Target French: il enseigne la géographie mondiale à des classes de lycée
+Predicted French: il enseigne la chimie aux aux aux étudiants
 Exact Match: False
-BLEU-4: 0.0685
+BLEU-4: 0.1071
 --------------------------------------------------

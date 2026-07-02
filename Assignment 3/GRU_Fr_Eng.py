@@ -74,7 +74,7 @@ print("Total sentence pairs:", len(pairs))
 train_pairs, val_pairs = train_test_split(
     pairs,
     test_size=0.2,
-    random_state=SEED,
+    random_state=SPLIT_SEED,
     shuffle=True
 )
 

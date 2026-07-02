@@ -13,4 +13,4 @@ Final Training Loss: 0.7416
 Final Validation Loss: 4.1991
 Validation Exact Match Accuracy: 0.00%
 Validation BLEU-4 Score: 0.1154
-Total Training Time: 18.61 seconds
+Total Training Time: 17.42 seconds
