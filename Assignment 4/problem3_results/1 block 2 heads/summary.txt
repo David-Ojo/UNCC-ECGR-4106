@@ -1,0 +1,16 @@
+Problem 1: GRU Encoder-Decoder Baseline
+==================================================
+Training size: 412
+Validation size: 103
+English vocab size: 841
+French vocab size: 935
+Embedding size: 64
+Hidden size: 128
+Epochs: 100
+Batch size: 64
+Learning rate: 0.001
+Final Training Loss: 0.4559
+Final Validation Loss: 3.8855
+Validation Exact Match Accuracy: 0.97%
+Validation BLEU-4 Score: 0.1163
+Total Training Time: 7.98 seconds
