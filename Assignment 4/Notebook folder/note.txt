@@ -1,0 +1,7 @@
+The problem 2 and 3 will have the same 
+epoch 1 since I will be changing the block and head parameters but not running
+the epoch 1 again due to time contraints.
+
+
+HW 4 trains quickly so I will let it play out. But since collab hardware
+and my hardware are diffeent the results will also be different.

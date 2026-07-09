@@ -1,0 +1,104 @@
+English,Target French,Predicted French,Exact Match,BLEU-4
+we celebrated their wedding,nous avons célébré leur mariage,nous avons célébré célébré remise,False,0.26591479484724945
+we walk through the historic streets of paris,nous marchons dans les rues historiques de paris,nous avons traversé le col de haute du pied,False,0.028517539529041507
+i am currently reading a classic russian novel,je lis actuellement un roman classique russe,je lis un roman intéressant ce,False,0.10335094640592336
+she works from home on thursdays,elle travaille à domicile le jeudi,elle travaille des contrats juridiques des entreprises,False,0.06985342056580097
+he teaches world geography to high school classes,il enseigne la géographie mondiale à des classes de lycée,il enseigne la chimie aux aux aux étudiants,False,0.10706237461457326
+he answers all the questions,il répond à toutes les questions,il gravit la montagne,False,0.04873039689743777
+the birds sing in the trees,les oiseaux chantent dans les arbres,le train ouvre à la piscine,False,0
+they often talk about environmental conservation efforts,ils parlent souvent des efforts de conservation de l environnement,ils parlent souvent de mode de politique,False,0.12100518276540287
+we are planning a trip to rome,nous planifions un voyage à rome,nous planifions un voyage de japon,False,0.5081327481546147
+the ice is melting quickly,la glace fond rapidement,le pain est très,False,0
+we are definitely going to the live concert tomorrow,nous allons certainement au concert en direct demain,nous allons au musée à demain demain,False,0.07201170728284921
+the weather forecast predicts heavy snow tomorrow,les prévisions météo annoncent de fortes chutes de neige demain,le chien a a une chambre en hiver,False,0
+you have a beautiful garden,vous avez un magnifique jardin,vous avez une belle belle,False,0.11362193664674995
+i love this song,j aime cette chanson,j aime marcher la,False,0.16990442448471224
+he enjoys reading books,il aime lire des livres,il parle couramment cinq,False,0.06257106818159155
+i lost my ring in the ocean,j ai perdu ma bague dans l océan,je veux perdu mes dans la forêt,False,0.034052233956373766
+how are you?,comment ça va ?,il aime des,False,0
+the dog barks loudly,le chien aboie bruyamment,le chien était intense,False,0.16990442448471224
+i enjoy listening to jazz music,j aime écouter de la musique de jazz,j ai hâte de la musique,False,0.15557221826646012
+she works at a software company,elle travaille dans une entreprise de logiciels,elle travaille un laboratoire à haute,False,0.07308015504567583
+the project requires a lot of effort,le projet demande beaucoup d efforts,les oiseaux construisent une grande maison,False,0
+she wears a beautiful gold ring,elle porte une belle bague en or,elle porte un beau en argent,False,0.0808764862779457
+i want a hot cup of coffee,je veux une tasse de café chaud,je veux une tasse de mon,False,0.6431870218238024
+he finished his book yesterday,il a fini son livre hier,il a fini son test en avance,False,0.41113361690051975
+she wears a silver necklace,elle porte un collier en argent,elle porte un collier de diamants,False,0.5081327481546147
+the nurse advised him to sleep,l infirmière lui a couseeillé de dormir,le dentiste m a conseillé de me reposer,False,0.03303164318013808
+he sings in the choir,il chante dans le ch ur,il répond immédiatement le journal,False,0.05231223689135342
+we celebrated their golden wedding anniversary yesterday,nous avons célébré leur anniversaire de mariage d or hier,nous avons célébré célébré de remise de mariage,False,0.1346238089016021
+she enjoys listening to classical music at night,elle aime écouter de la musique classique la nuit,elle adore porter des vestes à des hôpital à,False,0.023980296761827107
+the snow is melting fast,la neige fond rapidement,le thé est très,False,0
+he writes scripts for movies,il écrit des scénarios pour des films,il écrit des articles pour,False,0.19153996003797966
+i enjoy walking in the forest,j aime marcher dans la forêt,j aime marcher dans la neige,False,0.7598356856515925
+they practice piano every afternoon,ils pratiquent le piano tous les après midi,ils s entraînent de la course,False,0.02925226826055808
+she speaks french fluently,elle parle français couramment,elle parle anglais anglais,False,0.16990442448471224
+they hike in the forest,ils font de la randonnée dans la forêt,ils nourrissent la tour,False,0.0351487760467425
+the crystal clear window reflects the beautiful sunset,la fenêtre transparente reflète le magnifique coucher de soleil,le koala grimpe reflète le ciel reflète le jardin,False,0.050712153369465586
+the business hotel is situated near the center,l hôtel d affaires est situé près du centre,le thé est est est est bondé est,False,0.024512401940754224
+they practice soccer every evening,ils s entraînent au football tous les soirs,ils s entraînent à la course,False,0.14477626226006024
+the cat meows loudly,le chat miaule bruyamment,le marché vend des,False,0.08034284189446518
+please pass me the salt,"s il vous plaît, passez moi le sel","il boit la plaît, à la barrière",False,0.034052233956373766
+the public library is an excellent study space,la bibliothèque publique est un excellent espace d étude,la bibliothèque est est très lieu pour,False,0.05809334108283256
+the wind blows gently,le vent souffle doucement,le train dort,False,0.0814136751754278
+the window offers a nice view,la fenêtre offre une belle vue,la porte a une belle maison,False,0.09554427922043669
+we watch a movie together,nous regardons un film ensemble,nous avons célébré un château,False,0.06389431042462725
+she loves to wear long flowing cotton skirts,elle adore porter de longues jupes amples en coton,elle adore porter des vestes des cuir modernes,False,0.12131756417616475
+the assignment requires research,le devoir nécessite des recherches,le train vend,False,0.05833544737207805
+where is the station?,où est la gare ?,le pain est,False,0.05833544737207805
+the autumn weather is very rainy here,le temps d automne est très pluvieux ici,la bibliothèque est très très très ici,False,0.0670144447096575
+i received an invitation to the party,j ai reçu une invitation à la fête,j ai reçu une invitation officielle de la fête,False,0.5133450480401704
+i want to drink a hot cup of tea,je veux boire une tasse de thé chaud,je veux boire une pomme de la fraîche,False,0.3655552228545123
+the teacher speaks slowly,l enseignant parle lentement,l horloge est bureau,False,0.08034284189446518
+she works part time at the library,elle travaille à temps partiel à la bibliothèque,elle travaille à plein temps à l hôpital hôpital,False,0.13485111859503685
+i want a large slice of chocolate cake,je veux une grande part de gâteau au chocolat,je veux une tasse de de la,False,0.13201355840223275
+the stars twinkle at night,les étoiles scintillent la nuit,le train à l heure,False,0
+the beautiful spring flowers are finally blooming,les belles fleurs du printemps s épanouissent enfin,les petits sont sont sur le printemps,False,0.034052233956373766
+we dance at the wedding,nous dansons au mariage,nous avons visité le parc,False,0.05372849659117709
+he is hungry,il a faim,il parle magnifiquement,False,0.11362193664674995
+the bus arrives at five o clock,le bus arrive à cinq heures,le train arrive à l heures à l,False,0.06985342056580097
+the chef prepared a special menu for the guests,le chef a préparé un menu spécial pour les invités,les oiseaux théâtrale un une un bois au,False,0.025725069574826766
+the project takes a lot of time,le projet prend beaucoup de temps,la porte a une une ovation bois,False,0
+we are planning a trip to london,nous planifions un voyage à londres,nous planifions un voyage de japon,False,0.5081327481546147
+he writes stories for children,il écrit des histoires pour enfants,il écrit des scénarios pour,False,0.23394743548827707
+the library has thousands of books,la bibliothèque contient des milliers de livres,l enfants du du bureau pour,False,0
+open the door,ouvrez la porte,le bébé pleure,False,0
+they live in a large metropolitan city,ils vivent dans une grande ville métropolitaine,ils vivent dans un petit village,False,0.17103294495668978
+we visited the national park,nous avons visité le parc national,nous avons visité le monument,False,0.5475182535069453
+the birds chirp in the morning,les oiseaux gazouillent le matin,le train part le matin,False,0.11362193664674995
+the city bus arrives precisely at five o clock,le bus de la ville arrive précisément à cinq heures,les petits tamias stockent des graines à l aube,False,0.02145851237135921
+i am reading a classic novel,je lis un roman classique,je lis un roman intéressant,False,0.668740304976422
+i am cold,j ai froid,je te rendrai,False,0
+they play soccer every weekend,ils jouent au football chaque week end,ils parlent souvent de la course,False,0.03455747170954952
+he speaks four languages fluently,il parle couramment quatre langues,il parle couramment cinq langues,False,0.28574404296988
+the book is on the table,le livre est sur la table,le pain est à l,False,0.05231223689135342
+i need some help,j ai besoin d aide,je dois charger demain,False,0
+i see a ship in the distance,je vois un navire au loin,je vois un arc de la ville,False,0.16348126556655487
+she visits her grandparents,elle visite ses grands parents,elle traduit des plats,False,0.06257106818159155
+what time is it?,quelle heure est il ?,il pleut est,False,0.069372929071742
+the organic milk must be kept cold,le lait biologique doit être gardé au frais,le dentiste m a conseillé de la rivière,False,0.02777619034011792
+he replies to all customer emails immediately,il répond immédiatement à tous les e mails des clients,il aime regarder des documentaires à la télévision,False,0.02846946938149362
+she studies mathematics at university,elle étudie les mathématiques à l université,elle travaille à l temps,False,0.08428828344718171
+the winter is very cold here,l hiver est très froid ici,le pain est très chaud,False,0.09302577375697234
+she won a tennis match,elle a gagné un match de tennis,elle a remporté un tableau d,False,0.0808764862779457
+we celebrated her promotion with a nice dinner,nous avons célébré sa promotion avec un bon dîner,nous avons besoin une nouvelle de haute table,False,0.05183741882011645
+she paints her room white,elle peint sa chambre en blanc,elle peint sa chambre en bleu,False,0.7598356856515925
+she runs in the park,elle court dans le parc,elle danse dans la musique,False,0.06389431042462725
+i truly enjoy walking in the dense forest,j aime vraiment marcher dans la forêt dense,j aime marcher dans la dans dans la pluie,False,0.14923729480049117
+he fixes the car,il répare la voiture,il attend le bus,False,0.08034284189446518
+i accidentally left my umbrella inside the taxi,j ai accidentellement laissé mon parapluie dans le taxi,je dois trouve mon passeport dans la forêt,False,0.02915032279375143
+he likes to read science fiction,il aime lire de la science fiction,il aime prendre des photos,False,0.07616306180370792
+they live in a beautiful apartment facing the river,ils vivent dans un bel appartement face à la rivière,ils vivent dans un petit dans un village,False,0.26924761780320416
+the museum is closed today,le musée est fermé aujourd hui,le pain est très,False,0.05795053470733952
+they often talk about modern fashion trends,ils parlent souvent des tendances de la mode moderne,ils parlent souvent de mode de politique,False,0.1395873430390535
+they speak french at home,ils parlent français à la maison,ils parlent souvent de l école,False,0.08633400213704504
+the championship football match was incredibly intense,le match de football du championnat était incroyablement intense,le match était était sur le jardin,False,0.05809334108283256
+the cat climbs the tall tree,le chat grimpe sur le grand arbre,le koala grimpe sur le bananier,False,0.1837868600016897
+i see a plane in the sky,je vois un avion dans le ciel,je vois un arc dans la ville,False,0.17567205239427922
+she swims in the ocean,elle nage dans l océan,elle danse à la plage,False,0.05372849659117709
+they feed the birds in the park,ils nourrissent les oiseaux dans le parc,ils nourrissent les pigeons sur la place,False,0.16348126556655487
+she translates ancient manuscripts into modern languages,elle traduit des manuscrits anciens en langues modernes,elle traduit des contrats juridiques des juridiques des,False,0.1374708101760565
+she translates text from english to french,elle traduit du texte de l anglais au français,elle traduit des contrats juridiques des juridiques des entreprises,False,0.050712153369465586
+i need a new pair of shoes,j ai besoin d une nouvelle paire de chaussures,je veux une une pomme de,False,0.02944656445786981
+the user manual is straightforward to read,le manuel d utilisation est simple à lire,le train à du est est à,False,0.037684991644924185
+the small koala clings tightly to the branch,le petit koala s accroche fermement à la branche,le marché à des à des pour à l,False,0.028517539529041507
