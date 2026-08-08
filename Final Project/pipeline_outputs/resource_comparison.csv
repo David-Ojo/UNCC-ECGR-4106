@@ -1,0 +1,2 @@
+pipeline,total_frames_read,sampled_frames,classifier_runs,yolo_runs,yolo_calls_avoided,yolo_avoidance_percent,total_classifier_time_sec,total_yolo_time_sec,total_wall_time_sec,peak_gpu_memory_mb,cpu_ram_mb,estimated_total_gflops,estimated_gflops_per_sampled_frame
+CNN_to_YOLO,366,7,7,4,3,42.857142857142854,0.36151742935180664,0.9021873474121094,7.9765496253967285,365.71826171875,738.80859375,35.9,5.128571428571428
